@@ -1,0 +1,7 @@
+<%= form_tag artists_path do %>
+<label> Artist Form </label>
+<%= text_field_tag :'artist[name]'%>
+<%= text_area_tag :'artist[bio]'%>
+<%= hidden_field_tag :authenticity_token, form_authenticity_token%>
+<%= submit_tag "Create Artist"%>
+<%end%>
