@@ -1,0 +1,16 @@
+
+<% if flash[:messages] %>
+  <ul>
+    <% flash[:messages].each do |message|  %>
+      <li><%= message %></li>
+    <% end  %>
+  </ul>
+<% end %>
+
+
+<%= form_for @genre do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
